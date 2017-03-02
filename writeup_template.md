@@ -115,7 +115,7 @@ My final model results were:
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
-[image1]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img1.jpeg
+[image1]:(https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img1.jpeg)
 [image2]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img2.jpeg
 [image3]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img3.jpeg
 [image4]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img4.jpeg

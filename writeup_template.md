@@ -56,9 +56,9 @@ signs data set, including de Validation set that was not included in the jupyter
 
 The code for this step is contained in the third code cell of the IPython notebook.  
 
-Here is an exploratory visualization of the data set. It is a histogram showing how the data it is uneven distributed among classes, indicating that probably it will be necessary to perform data augmentation in the under-represented classes.
+As exploratory visualization of the data set i used a histogram showing how the data it is uneven distributed among classes, indicating that probably it will be necessary to perform data augmentation at the under-represented classes.
 
-![alt text][image1]
+After the data augmentation, process, I repeat the histogram, to validate the result.
 
 ###Design and Test a Model Architecture
 
@@ -66,87 +66,57 @@ Here is an exploratory visualization of the data set. It is a histogram showing 
 
 The code for this step is contained in the fourth code cell of the IPython notebook.
 
-As a first step, I decided to convert the images to grayscale because ...
+As a first step I decided to perform data-augmentation, selecting the classes with less that 500 examples, I have performed  several experiments with different thresholds, but the results where equivalent and with 500, the training is quite rapid. For each image in the selected classes, two rotated images 10º left and 10º right are added.
 
-Here is an example of a traffic sign image before and after grayscaling.
+The new number of training examples = 46919 from the original 34799.
 
-![alt text][image2]
+Nexts steps are the ones recommended in the class-videos and forums and slack. Until I applied all of them I was unable to reach the 95% level.
 
-As a last step, I normalized the image data because ...
+* Grayscaling
+* Histogram normalization
+* Data Normalization
+
+Forums where of great help for reshaping the image after the grayscaling, due to the characteristics of CV2.
+
+All the steps are applied to the aumengted training, test and validation set.
 
 ####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
-The code for splitting the data into training and validation sets is contained in the fifth code cell of the IPython notebook.  
-
-To cross validate my model, I randomly split the training data into a training set and validation set. I did this by ...
-
-My final training set had X number of images. My validation set and test set had Y and Z number of images.
-
-The sixth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because ... To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
+Validation data was provided in this version of the project, so it was not necessary to split the training data into a training set and validation set and data augmentation is needed before preprocessing the images. 
 
 
 ####3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
-The code for my final model is located in the seventh cell of the ipython notebook. 
 
-My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
+My final model is LeNet architecture modified with drop-out in the fully-connected layers, I have been researching the Inception architecture, but I was advised to use Keras, so I decided to conserve plain vanilla LeNet architecture with the drop-out characteristic, especially once it reached 95% with the preprocessing of the images.
+
 
 
 ####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-The code for training the model is located in the eigth cell of the ipython notebook. 
+To train the model, I perform several experiments changing epochs, dropout probabilities, learning rate, and batch size. Dropout is the most sensitive variable that I have found to try to improve in some percentage point the result, but most of the experiments, worsened the results sometimes in catastrofic ways, and I was unable to obtain a significant improvement. The keys to obtain satisfactory results are data augmentation and preprocessing.
 
-To train the model, I used an ....
+
+
 
 ####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
-The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
+
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 0.949
+* validation set accuracy of 0.930
+* test set accuracy of 0.947
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
  
 
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+https://www.google.es/imgres?imgurl=http%3A%2F%2Fbicyclegermany.com%2FImages%2FLaws%2F100_1607.jpg&imgrefurl=http%3A%2F%2Fbicyclegermany.com%2Fgerman_bicycle_laws.html&docid=hhnc9xU3HHVSrM&tbnid=xrKYnbh6UMa3kM%3A&vet=1&w=1000&h=750&bih=863&biw=1920&q=german%20traffic%20signs&ved=0ahUKEwjIvre8yrLSAhXJJ8AKHRxaDFsQMwgfKAUwBQ&iact=mrc&uact=8
 
-Here are five German traffic signs that I found on the web:
-
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
 
 The first image might be difficult to classify because ...
 

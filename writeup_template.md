@@ -51,11 +51,12 @@ signs data set, including de Validation set that was not included in the jupyter
 * Image data shape = (32, 32, 3)
 * Number of classes = 43
 * Number of validating examples= 4410
+
 ####2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
 The code for this step is contained in the third code cell of the IPython notebook.  
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a histogram showing how the data it is uneven distributed among classes, indicating that probably it will be necessary to perform data augmentation in the under-represented classes.
 
 ![alt text][image1]
 

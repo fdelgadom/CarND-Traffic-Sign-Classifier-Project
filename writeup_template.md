@@ -115,10 +115,16 @@ My final model results were:
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
-https://www.google.es/imgres?imgurl=http%3A%2F%2Fbicyclegermany.com%2FImages%2FLaws%2F100_1607.jpg&imgrefurl=http%3A%2F%2Fbicyclegermany.com%2Fgerman_bicycle_laws.html&docid=hhnc9xU3HHVSrM&tbnid=xrKYnbh6UMa3kM%3A&vet=1&w=1000&h=750&bih=863&biw=1920&q=german%20traffic%20signs&ved=0ahUKEwjIvre8yrLSAhXJJ8AKHRxaDFsQMwgfKAUwBQ&iact=mrc&uact=8
+[image1]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img1.jpeg
+[image2]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img2.jpeg
+[image3]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img3.jpeg
+[image4]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img4.jpeg
+[image5]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img5.jpeg
+[image6]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img6.jpeg
 
-
-The first image might be difficult to classify because ...
+Images 1,2 and 3 are clear pictures and I were expecting a correct classfication
+Images 4 and 6 are in a different perspective so are more difficult examples.
+Image 5 background may add noise and perhaps it is difficult to separate
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 

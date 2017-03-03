@@ -158,16 +158,60 @@ The model was able to correctly guess 3 of the 6 traffic signs, which gives an a
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is almost sure that this is a Right of way sign (probability of 0.97), and the classification is correct. The top five soft max probabilities were
 
-| Traffic sign         	|     Predictions        					| Probabilities
+| Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 11,Right-of-way at the next intersection     	| 11, 30, 27, 28, 24  									| 9.74252045e-01,   2.57477257e-02,   2.16697359e-07,
-          2.65665374e-08,   2.34724373e-09
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 9.74252045e-01       			| 11,Right-of-way at the next intersection						| 
+| 2.57477257e-02     				| 30,Beware of ice/snow								|
+| 2.16697359e-07					| 27,Pedestrians											|
+| 2.65665374e-08  			| 28,Children crossing			|
+| 2.34724373e-09	    | 24,Road narrows on the right     							|
+
+For the second image the results are very similar, correct prediction wiht 0.98 probability:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.86913860e-01     			| 1,Speed limit (30km/h)					| 
+| 9.74570774e-03     				| 31,Wild animals crossing								|
+| 1.81258365e-03					| 27,Pedestrians											|
+| 1.52783329e-03 			| 0,Speed limit (20km/h)			|
+| 2.63513495e-08   | 38,Keep right|
+
+The third image results are:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 7.77410626e-01   			| 12,Priority road				| 
+| 6.08612597e-02    				| 25,Road work							|
+| 5.36891706e-02					| 11,Right-of-way at the next intersection							|
+| 3.75664979e-02 			| 3,Speed limit (60km/h)		|
+| 2.29234789e-02   | 41,End of no passing|
+
+And it is a bit of surprise, the correct signal is 14,Stop, and it seems a clear image. Also the 14 classs is wel populated in the training data.
+
+Fourth image, with 100% probability it is an incorrect result.
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00   			| 34,Turn left ahead			| 
+| 3.97842399e-08    				| 38,Keep right						|
+| 2.37245912e-09				| 35,Ahead only						|
+|  5.31064396e-13 			| 13,Yield|
+| 3.90791220e-14   |23,Slippery road   |
+
+Correct result is 18,General caution
+
+Fith image, correct prediction:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00   			| 12,Priority road			| 
+| 3.86223142e-09   				| 40,Roundabout mandatory				|
+| 3.18777400e-11				| 5,Speed limit (80km/h)				|
+|  2.63772667e-11 			| 13,Yield|
+| 2.29609370e-11   |23,Slippery road   |
 
 
-For the second image ... 
+12, 40,  5, 10, 33
+

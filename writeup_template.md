@@ -158,7 +158,7 @@ The model was able to correctly guess 3 of the 6 traffic signs, which gives an a
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 
-For the first image, the model is almost sure that this is a Right of way sign (probability of 0.97), and the classification is correct. The top five soft max probabilities were
+* For the first image, the model is almost sure that this is a Right of way sign (probability of 0.97), and the classification is correct. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -168,7 +168,7 @@ For the first image, the model is almost sure that this is a Right of way sign (
 | 2.65665374e-08  			| 28,Children crossing			|
 | 2.34724373e-09	    | 24,Road narrows on the right     							|
 
-For the second image the results are very similar, correct prediction wiht 0.98 probability:
+* For the second image the results are very similar, correct prediction wiht 0.98 probability:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -178,7 +178,7 @@ For the second image the results are very similar, correct prediction wiht 0.98 
 | 1.52783329e-03 			| 0,Speed limit (20km/h)			|
 | 2.63513495e-08   | 38,Keep right|
 
-The third image results are:
+* The third image results are:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -188,9 +188,9 @@ The third image results are:
 | 3.75664979e-02 			| 3,Speed limit (60km/h)		|
 | 2.29234789e-02   | 41,End of no passing|
 
-And it is a bit of surprise, the correct signal is 14,Stop, and it seems a clear image. Also the 14 classs is wel populated in the training data.
+And it is a bit of surprise, the correct signal is 14,Stop, and it seems a clear image. Also the 14 classs is well populated in the training data.
 
-Fourth image, with 100% probability it is an incorrect result.
+* Fourth image, with 100% probability it is an incorrect result.
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -202,7 +202,7 @@ Fourth image, with 100% probability it is an incorrect result.
 
 Correct result is 18,General caution
 
-Fith image, correct prediction:
+* Fith image, correct prediction:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -213,7 +213,7 @@ Fith image, correct prediction:
 | 2.29609370e-11   |33,Turn right ahead   |
 
 
-Sith image:
+* Sixth image:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 

@@ -160,9 +160,10 @@ The model was able to correctly guess 3 of the 6 traffic signs, which gives an a
 
 For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
-| Probability         	|     Prediction	        					| 
+| Traffic sign         	|     Predictions        					| Probabilities
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
+| 11,Right-of-way at the next intersection     	| 11, 30, 27, 28, 24  									| 9.74252045e-01,   2.57477257e-02,   2.16697359e-07,
+          2.65665374e-08,   2.34724373e-09
 | .20     				| U-turn 										|
 | .05					| Yield											|
 | .04	      			| Bumpy Road					 				|

@@ -31,7 +31,7 @@ The goals / steps of this project are the following:
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
-First of all many thanks to Alex Staravoitau and Param Aggarwal posts in Medium https://chatbotslife.com/intricacies-of-traffic-sign-classification-with-tensorflow-8f994b1c8ba#.dy8cifj0y, and also Mehdi Sqalli’s project code https://github.com/MehdiSv/TrafficSignsRecognition/blob/master/final_Traffic_Signs_Recognition.ipynb, Vivek Yadav’s project code https://github.com/vxy10/p2-TrafficSigns/blob/master/Traffic_signs_Col_val_final2.ipynb and Jeremy Shannon’s project code https://github.com/jeremy-shannon/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb that I have used to check solutions and results.
+First of all many thanks to Alex Staravoitau blog http://navoshta.com/traffic-signs-classification/ and Param Aggarwal post in Medium https://chatbotslife.com/intricacies-of-traffic-sign-classification-with-tensorflow-8f994b1c8ba#.dy8cifj0y, and also Mehdi Sqalli’s project code https://github.com/MehdiSv/TrafficSignsRecognition/blob/master/final_Traffic_Signs_Recognition.ipynb, Vivek Yadav’s project code https://github.com/vxy10/p2-TrafficSigns/blob/master/Traffic_signs_Col_val_final2.ipynb and Jeremy Shannon’s project code https://github.com/jeremy-shannon/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb that I have used to check solutions and results.
 ---
 ###Writeup / README
 

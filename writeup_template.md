@@ -119,12 +119,19 @@ My final model results were:
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+
 ![alt text][image3]
+
 ![alt text][image4]
+
 ![alt text][image5]
+
 ![alt text][image6]
+
 ![alt text][image7]
+
 ![alt text][image8]
+
 
 
 * Images 1,2 and 3 are clear pictures and I were expecting a correct classfication.

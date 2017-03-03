@@ -60,7 +60,7 @@ As exploratory visualization of the data set I used a histogram showing how the 
 
 ![alt text][image1]
 
-After the data augmentation, process, I repeat the histogram, to validate the result.
+After the data augmentation process, I repeat the histogram, to validate the result.
 
 ![alt text][image2]
 

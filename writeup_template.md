@@ -21,12 +21,12 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/Histograma1.png "Histograma_1"
 [image2]: ./examples/Histograma2.png "Histograma_2"
-[image3]: ./examples/img1.jpg "Traffic Sign 1"
-[image4]: ./examples/img2.jpg "Traffic Sign 2"
-[image5]: ./examples/img3.jpg "Traffic Sign 3"
-[image6]: ./examples/img4.jpg "Traffic Sign 4"
-[image7]: ./examples/img5.jpg "Traffic Sign 5"
-[image8]: ./examples/img6.jpg "Traffic Sign 6"
+[image3]: ./examples/img1.jpeg "Traffic Sign 1"
+[image4]: ./examples/img2.jpeg "Traffic Sign 2"
+[image5]: ./examples/img3.jpeg "Traffic Sign 3"
+[image6]: ./examples/img4.jpeg "Traffic Sign 4"
+[image7]: ./examples/img5.jpeg "Traffic Sign 5"
+[image8]: ./examples/img6.jpeg "Traffic Sign 6"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  

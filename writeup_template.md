@@ -21,12 +21,12 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/Histograma1.png "Histograma_1"
 [image2]: ./examples/Histograma2.png "Histograma_2"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image3]: ./examples/img1.jpg "Traffic Sign 1"
+[image4]: ./examples/img2.jpg "Traffic Sign 2"
+[image5]: ./examples/img3.jpg "Traffic Sign 3"
+[image6]: ./examples/img4.jpg "Traffic Sign 4"
+[image7]: ./examples/img5.jpg "Traffic Sign 5"
+[image8]: ./examples/img6.jpg "Traffic Sign 6"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -119,32 +119,37 @@ My final model results were:
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
+![alt text][image7]
+![alt text][image8]
 
 
-Images 1,2 and 3 are clear pictures and I were expecting a correct classfication
-Images 4 and 6 are in a different perspective so are more difficult examples.
-Image 5 background may add noise and perhaps it is difficult to separate
+* Images 1,2 and 3 are clear pictures and I were expecting a correct classfication.
+* Images 4 and 6 are in a different perspective so are more difficult examples.
+* Image 5 background may add noise and perhaps it is difficult to separate the traffic signal.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
+
 
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| 11,Right-of-way at the next intersection      		| 11,Right-of-way at the next intersection 									| 
+| 1,Speed limit (30km/h)   			| 1,Speed limit (30km/h)					|
+| 14,Stop			| 12,Priority road			|
+| 18,General caution   		| 9,No passing			|
+| 12,Priority road	| 12,Priority road    							|
+| 28,Children crossing | 12,Priority road  
 
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 3 of the 6 traffic signs, which gives an accuracy of 50%. 
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
 For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 

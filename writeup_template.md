@@ -19,8 +19,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
+[image1]: ./examples/Histograma1.png "Histograma_1"
+[image2]: ./examples/Histograma2.png "Histograma_2"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
@@ -56,9 +56,13 @@ signs data set, including de Validation set that was not included in the jupyter
 
 The code for this step is contained in the third code cell of the IPython notebook.  
 
-As exploratory visualization of the data set i used a histogram showing how the data it is uneven distributed among classes, indicating that probably it will be necessary to perform data augmentation at the under-represented classes.
+As exploratory visualization of the data set I used a histogram showing how the data it is uneven distributed among classes, indicating that probably it will be necessary to perform data augmentation at the under-represented classes.
+
+![alt text][image1]
 
 After the data augmentation, process, I repeat the histogram, to validate the result.
+
+![alt text][image2]
 
 ###Design and Test a Model Architecture
 
@@ -115,12 +119,7 @@ My final model results were:
 ###Test a Model on New Images
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
-[image1]:(https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img1.jpeg)
-[image2]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img2.jpeg
-[image3]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img3.jpeg
-[image4]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img4.jpeg
-[image5]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img5.jpeg
-[image6]:https://github.com/fdelgadom/CarND-Traffic-Sign-Classifier-Project/blob/patch-1/img6.jpeg
+
 
 Images 1,2 and 3 are clear pictures and I were expecting a correct classfication
 Images 4 and 6 are in a different perspective so are more difficult examples.

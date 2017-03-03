@@ -209,9 +209,18 @@ Fith image, correct prediction:
 | 1.00000000e+00   			| 12,Priority road			| 
 | 3.86223142e-09   				| 40,Roundabout mandatory				|
 | 3.18777400e-11				| 5,Speed limit (80km/h)				|
-|  2.63772667e-11 			| 13,Yield|
-| 2.29609370e-11   |23,Slippery road   |
+|  2.63772667e-11 			| 10,No passing for vehicles over 3.5 metric tons|
+| 2.29609370e-11   |33,Turn right ahead   |
 
 
-12, 40,  5, 10, 33
+Sith image:
 
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.98892248e-01   			| 12,Priority road			| 
+| 6.20778068e-04   				| 40,Roundabout mandatory				|
+| 4.46578604e-04				| 42,End of no passing by vehicles over 3.5 metric tons				|
+|  3.34825709e-05 			| 7,Speed limit (100km/h)|
+| 3.11206009e-06   |41,End of no passing   |
+
+Correct prediction is 28,Children crossing

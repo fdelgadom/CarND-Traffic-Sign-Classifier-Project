@@ -27,6 +27,12 @@ The goals / steps of this project are the following:
 [image6]: ./examples/img4.jpeg "Traffic Sign 4"
 [image7]: ./examples/img5.jpeg "Traffic Sign 5"
 [image8]: ./examples/img6.jpeg "Traffic Sign 6"
+[image9]: ./examples/Softmax1.png "Softmax 1"
+[image10]: ./examples/Softmax2.png "Softmax 2"
+[image11]: ./examples/Softmax3.png "Softmax 3"
+[image12]: ./examples/Softmax4.png "Softmax 4"
+[image13]: ./examples/Softmax5.png "Softmax 5"
+[image14]: ./examples/Softmax6.png "Softmax 6"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -196,6 +202,8 @@ The model was able to correctly guess 3 of the 6 traffic signs, which gives an a
 | 2.65665374e-08  			| 28,Children crossing			|
 | 2.34724373e-09	    | 24,Road narrows on the right     							|
 
+![alt text][image9]
+
 * For the second image the results are very similar, correct prediction wiht 0.98 probability:
 
 | Probability         	|     Prediction	        					| 
@@ -206,6 +214,8 @@ The model was able to correctly guess 3 of the 6 traffic signs, which gives an a
 | 1.52783329e-03 			| 0,Speed limit (20km/h)			|
 | 2.63513495e-08   | 38,Keep right|
 
+![alt text][image10]
+
 * The third image results are:
 
 | Probability         	|     Prediction	        					| 
@@ -215,6 +225,8 @@ The model was able to correctly guess 3 of the 6 traffic signs, which gives an a
 | 5.36891706e-02					| 11,Right-of-way at the next intersection							|
 | 3.75664979e-02 			| 3,Speed limit (60km/h)		|
 | 2.29234789e-02   | 41,End of no passing|
+
+![alt text][image11]
 
 And it is a bit of surprise, the correct signal is 14,Stop, and it seems a clear image. Also the 14 classs is well populated in the training data.
 
@@ -228,6 +240,8 @@ And it is a bit of surprise, the correct signal is 14,Stop, and it seems a clear
 |  5.31064396e-13 			| 13,Yield|
 | 3.90791220e-14   |23,Slippery road   |
 
+![alt text][image12]
+
 Correct result is 18,General caution
 
 * Fith image, correct prediction:
@@ -240,6 +254,7 @@ Correct result is 18,General caution
 |  2.63772667e-11 			| 10,No passing for vehicles over 3.5 metric tons|
 | 2.29609370e-11   |33,Turn right ahead   |
 
+![alt text][image13]
 
 * Sixth image:
 
@@ -250,6 +265,8 @@ Correct result is 18,General caution
 | 4.46578604e-04				| 42,End of no passing by vehicles over 3.5 metric tons				|
 |  3.34825709e-05 			| 7,Speed limit (100km/h)|
 | 3.11206009e-06   |41,End of no passing   |
+
+![alt text][image14]
 
 Correct prediction is 28,Children crossing
 

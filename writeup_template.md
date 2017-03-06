@@ -96,18 +96,45 @@ Validation data was provided in this version of the project, so it was not neces
 
 My final model is LeNet architecture modified with drop-out in the fully-connected layers, I have been researching the Inception architecture, but I was advised to use Keras, so I decided to conserve plain vanilla LeNet architecture with the drop-out characteristic, especially once it reached 95% with the preprocessing of the images.
 
+My final model is a LeNet architecture consisted of the following layers:
+
+| Layer         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Input         		| 32x32x1 Gray image   							| 
+| Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride, valid padding, outputs 14x14x6 				|
+| Convolution 5x5    | 1x1 stride, valid padding, outputs 10x10x16   									|
+| RELU		|      									|
+| Max pooling				| 2x2 stride,  valid padding, outputs 5x5x16        									|
+|			Flatten			|					Output 400							|
+|			Fully connected			|					Output 120							|
+|    RELU   |
+| Dropout| Keep prob 0.75%
+|			Fully connected			|					Output 84							|
+|    RELU   |
+| Dropout| Keep prob 0.75%
+|			Fully connected			|					Output 43							|
+|    Softmax   |
+
 
 
 ####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I perform several experiments changing epochs, dropout probabilities, learning rate, and batch size. Dropout is the most sensitive variable that I have found to try to improve in some percentage point the result, but most of the experiments, worsened the results sometimes in catastrofic ways, and I was unable to obtain a significant improvement. The keys to obtain satisfactory results are data augmentation and preprocessing.
 
-
+* Optimizer : AdamOptimizer, by default in LeNet architecture. I have seen slack comments about other optimizers, but it seems it wasn`t a critical parameter for this problem
+* Batch size: 128. The important characteristic it is multiple of 2. A couple of experiments changing this parameter without improvements
+* Epochs: 50, due to the Dropout, there is a low risk of overfitting, and in AWS the training is fast.
+* Learning rate: 0.001 Also performed several experiments without improvements and also, quite estrange without worsening the results
 
 
 ####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
+The choice of the initial architecture LeNet is recommended in the project instructions and the work has been to increase the result, through small improvements in the architecture with the Dropout and, mainly through the preprocessing of the images.
 
+As I indicated earlier, an alternative considered LeNet has been Inception Module, but I decided to wait to work with Keras.
+
+To train the model, I perform several experiments changing epochs, dropout probabilities, learning rate, and batch size. Dropout is the most sensitive variable that I have found to try to improve in some percentage point the result, but most of the experiments, worsened the results sometimes in catastrofic ways, and I was unable to obtain a significant improvement. The keys to obtain satisfactory results are data augmentation and preprocessing.
 
 My final model results were:
 * training set accuracy of 0.949
